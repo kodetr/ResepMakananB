@@ -26,7 +26,7 @@ public class MakananImp extends SQLiteOpenHelper implements MakananInterface {
     @Override
     public Cursor read() {
         SQLiteDatabase sql = getReadableDatabase();
-        return sql.rawQuery("SELACT * FROM '" + NAMA_TBL + "", null);
+        return sql.rawQuery("SELACT * FROM " + NAMA_TBL + "", null);
     }
 
     @Override
@@ -42,7 +42,6 @@ public class MakananImp extends SQLiteOpenHelper implements MakananInterface {
 
     @Override
     public void delete(int id) {
-        SQLiteDatabase sql = getWritableDatabase();
-        sql.execSQL("DELETE FROM '" + NAMA_TBL + "' WHERE id='" + id + "'");
+        
     }
 }
