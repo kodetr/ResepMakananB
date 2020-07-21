@@ -13,14 +13,6 @@ public class ResepMakanan {
         this.id = id;
     }
 
-    public String getNama_makanan() {
-        return nama_makanan;
-    }
-
-    public void setNama_makanan(String nama_makanan) {
-        this.nama_makanan = nama_makanan;
-    }
-
     public String getGambar() {
         return gambar;
     }
