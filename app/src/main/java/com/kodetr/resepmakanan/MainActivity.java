@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements MakananAdapter.On
         makananList = new ArrayList<>();
 
         Cursor c = mi.read();
-        if (c.moveToFirst()) {
+        if (c.MoveToNext()) {
             do {
                 ResepMakanan makanan = new ResepMakanan();
                 makanan.setId(c.getInt(0));
