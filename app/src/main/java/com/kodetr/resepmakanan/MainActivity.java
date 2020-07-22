@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity implements MakananAdapter.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        init();
         read();
     }
 
